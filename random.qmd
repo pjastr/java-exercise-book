@@ -1,0 +1,11 @@
+# Generating Pseudorandom Numbers
+
+1. Write a method `generateRandomInt` that generates and returns a random integer. Create a test case.
+
+2. Write a method `generateRandomDouble` that generates and returns a random floating-point number in the range from 0.0 to 1.0. Create a test case.
+
+3. Write a method `generateRandomIntInRange` that takes two integers as arguments and returns a random integer from that range (inclusive of the bounds). For example, for the arguments 5 and 10, the method should return a number in the range from 5 to 10. Create a test case.
+
+4. Write a method `generateRandomGaussian` that generates and returns a random floating-point number following the normal distribution. Create a test case.
+
+5. Write a method `generateRandomBoolean` that generates and returns a random boolean value (true or false). Create a test case.

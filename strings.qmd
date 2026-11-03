@@ -1,0 +1,50 @@
+# Strings
+
+1. Write a static method that takes a string as an argument and returns the string in reverse order. Create a test case.
+
+2. Write a static method that checks whether a given string is a palindrome. A palindrome is a word, phrase, number or other sequence of characters that reads the same forwards and backwards. Create a test case.
+
+3. Write a static method that removes all spaces from a given string. Create a test case.
+
+4. Write a static method that takes a string as an argument and returns the string with its first and last letters swapped. Create a test case.
+
+5. Write a program that analyzes a given string for the frequency of occurrence of each character. The program should display each character and the number of its occurrences in the given string. Read the data from standard input.
+
+6. Write a program that takes a string as input and prints all the characters located at even indices of the string, using the `charAt` method.
+
+7. Using the `charAt` method, write a static method that checks whether a given string starts and ends with the same character. Create a test case.
+
+8. Write a program that takes three strings: a main string, a prefix and a suffix. Using the `startsWith` and `endsWith` methods, check whether the main string starts with the given prefix and ends with the given suffix. Print an appropriate message for each of these cases.
+
+9.    Write a program that takes a single character and an integer `n` as input. Using the `StringBuilder` class, build and print a pyramid of height `n`, where each level of the pyramid consists of the given character. For example, for the character `*` and `n=3`, the expected output is:
+
+```
+ *
+***
+*****
+```
+
+10. A string is given. Using `StringBuilder`, write a program that removes all repeated characters, leaving only the first occurrence of each character. For example, for the string "banana", the expected result is "ban".
+
+11. Write a program that takes a sentence as input. Using `StringBuilder`, reverse each word in the sentence, but keep the order of the words. For example, for the sentence "Java is fun", the expected result is "avaJ si nuf".
+
+12. Write a static method `reverseString` that takes a `StringBuilder` object as an argument and returns a new `StringBuilder` that is the reversed original string. Create a test case.
+
+13. Write a static method `removeDuplicates` that takes a `StringBuilder` and removes all repeated characters in the string, leaving only the first occurrence of each character. Create a test case.
+
+14. Write a static method `mostFrequentChar` that takes a `StringBuilder` as an argument and returns the character that occurs most frequently in the string. In case of ties, return the first of the tied characters. Create a test case.
+
+15. Write a static method `insertSubstring` that takes two arguments: `StringBuilder sb` and `String toInsert`. The method should insert `toInsert` into the middle of the original `StringBuilder`. Create a test case.
+
+16. Write a static method `splitByEvenOdd` that takes a `StringBuilder` as an argument. The method should return an array of two elements of type `StringBuilder`. The first element of the array should contain the characters from the odd indices of the original string, and the second the characters from the even indices. Create a test case.
+
+17. Write a static method `capitalizeEverySecond` that takes a `StringBuffer` object as an argument. The method should change every second letter to uppercase. Create a test case.
+
+18. Write a static method `replaceSubstring` that takes the arguments `StringBuffer sb`, `String oldSub` and `String newSub`. The method should replace all occurrences of the substring `oldSub` with `newSub`. Create a test case.
+
+19. Write a static method `countOccurrences` that takes two arguments: `StringBuffer sb` and `char c`. The method should return the number of occurrences of the character `c` in the string. Create a test case.
+
+20. Write a static method `trimToSize` that takes a `StringBuffer sb` and an integer `n`. The method should reduce the length of the string to `n` characters (if the original string is longer). If the string is shorter than or equal to `n`, it should remain unchanged. Create a test case.
+
+21. Write a static method `isPalindrome` that takes a `StringBuffer` as an argument. The method should check whether the string is a palindrome (reads the same forwards and backwards) and return the appropriate boolean value. Create a test case.
+

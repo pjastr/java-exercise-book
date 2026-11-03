@@ -1,0 +1,31 @@
+# ArrayList (Array Lists)
+
+1. Write a program that creates an array list of 10 integers and then displays them on the console in the reverse order of input.
+
+2. Write a program that creates an array list of 10 floating-point numbers, and then calculates and displays their sum.
+
+3. Write a static method `minimumValue` that takes an array list of integers as an argument and returns the smallest number in the array list. Assume that the array list will always have at least one element. Create a test case.
+
+4. Write a static method `minimumValue` that takes an array list of rational numbers as an argument and returns the smallest number in the array list. Assume that the array list will always have at least one element. Create a test case.
+
+5. Write a static method `average` that takes an array list of floating-point numbers as an argument and returns the arithmetic mean of all the numbers. If the array list is empty, return 0. Create a test case.
+
+6. Write a static method `reverseArray` that takes an array list of integers as an argument and returns a new array list, but with the order of the elements reversed. For example, for [1, 2, 3, 4, 5], the function should return [5, 4, 3, 2, 1]. Create a test case.
+
+7. Write a static method `reverseArray` that takes an array list of integers as an argument. The method reverses the order of the elements in the array list and should be a procedure (return nothing). For example, for [1, 2, 3, 4, 5], the function should change the array list to [5, 4, 3, 2, 1]. Create a test case.
+
+8. Write a static method `countZeros` that takes an array list of integers as an argument and returns the number of occurrences of zero in the array list. For example, for [0, 1, 2, 0, 3, 0, 4], the function should return 3. Create a test case.
+
+9. Write a static method `oddElementsSum` that takes an array list of integers as an argument and returns the sum of all odd numbers in the array list. If there are no odd numbers in the array list, the function should return 0. Create a test case.
+
+10. Write a static method `copyArray` that takes an array list of integers as an argument and returns a new array list that is a copy of the original. The function should copy the array list manually, element by element, without using the system copy methods. Create a test case.
+
+11. Write a static method `copyArrayReverse` that takes an array list of integers as an argument and returns a new array list that is a reversed copy of the original. For example, for the array list [1, 2, 3, 4, 5], the function should return [5, 4, 3, 2, 1]. Create a test case.
+
+12. Write a static method `copyArrayEven` that takes an array list of integers as an argument and returns a new array list containing only the even numbers from the original array list. For example, for the array list [1, 2, 3, 4, 5], the function should return [2, 4]. If there are no even numbers in the array list, the function should return an empty array list. Create a test case.
+
+13. Write a static method `copyArrayWithIndex` that takes an array list of integers and a start and end index as arguments. The function should return a new array list containing the elements of the original array list from the start index to the end index (inclusive). For example, for the array list [1, 2, 3, 4, 5] and the indices 1 and 3, the function should return [2, 3, 4]. Create a test case.
+
+14. Write a static method `mergeArrays` that takes two arrays of integers as arguments. The function should return a new array list that is the concatenation of both original arrays. For example, for the array lists [1, 2, 3] and [4, 5, 6], the function should return [1, 2, 3, 4, 5, 6]. Create a test case.
+
+15. Write a method `sortArray` that takes an array list of integers as an argument and returns a new array list that is a sorted version of the original array list. Create a test case.

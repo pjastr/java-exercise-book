@@ -1,0 +1,20 @@
+# Delegation
+
+1.  Perform the following steps:
+
+a.  Create an interface `Printer` with a method `print(String text)`.
+b.  Create a class `StandardPrinter` that implements `Printer` and prints the text to the console.
+c.  Create a class `Office` that has a private field of type `Printer`. In the `Office` constructor, take a `Printer` as an argument and assign it to the field. Add a method `printDocument(String text)` that will delegate the printing task to the `Printer` object.
+
+
+2. Perform the following steps:
+
+a. Create an interface `Engine` with the methods `start()` and `stop()`.
+b. Create a class `PetrolEngine` that implements `Engine` and simulates the operation of a petrol engine.
+c. Create a class `Car` that has a private field of type `Engine`. In the constructor, take an `Engine` as an argument. Add the methods `start()` and `stop()`, which will delegate the tasks of starting and stopping the engine, respectively, to the `Engine` object.
+
+3. Perform the following steps:
+
+a. Create an interface `Notification` with a method `send(String message)`.
+b. Create a class `Email` that implements `Notification` and simulates sending an e-mail message.
+c. Create a class `User` that has a private field of type `Notification`. In the constructor, take a `Notification` as an argument. Add a method `notifyAboutUpgrade(String information)` that will delegate the task of sending the notification to the `Notification` object.

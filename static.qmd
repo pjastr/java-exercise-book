@@ -1,0 +1,51 @@
+# Static Fields and Methods
+
+1. Create a class `Person`. The class should contain a field `name` and a static field `counter`. The task is to increase the value of `counter` every time a new instance of the `Person` class is created. Add a method that returns the value of `counter`. Create a test case.
+
+2. Create a class `Mathematics` that has a static field `PI` storing an approximate value of $\pi$. Make sure that the value of this field cannot be modified. Create a test case.
+
+3. Create a class `Singleton` that uses a static field to store one and only one instance of this class. The class should contain a private constructor and a public static method `getInstance()` that returns the single instance of the `Singleton` class. Create a test case.
+
+4. Create a class `Configuration` that contains a static field `applicationVersion` with a default value of "1.0". Add methods for reading and changing this value. Create a test case.
+
+5. Create a class `Calculator` that has basic mathematical methods: addition, subtraction, multiplication and division. Implement these methods as static methods. Create a second class in which you test these methods without creating an instance of the `Calculator` class.
+
+6. Create a class `ShapeFactory` that has static methods for creating various geometric shapes, such as circles, squares or triangles. Then create a test class in which you use these methods to create various shapes without the need to create an instance of the `ShapeFactory` class.
+
+7. Create a class `Settings` that has various configuration parameters of an application (e.g. version, language). Add non-static methods for changing these parameters and a static method `defaultSettings()` that returns the default configuration of the application. In a test class, see how both groups of methods work and what the differences between them are.
+
+8. Create a class `Configuration` that has a static field `applicationVersion` and a static field `applicationName`. Mark one of these fields as `final`. Consider what would happen if you wanted to update the value of one of these fields while the application is running.
+
+9. Create a class `Product` that contains a static field `numberOfProducts` and a static field `MAX_PRODUCTS`. The `numberOfProducts` field will be used to count the number of products created, and `MAX_PRODUCTS` to limit their number. Mark only one of these fields with the `final` keyword and consider the consequences of this choice.
+
+10. In a single project, do the following:
+
+A. Create a class `SportsFacility`, which should be placed in the package `pl.edu.uwm.wmii.sports`.
+
+B. The class should contain three attributes:
+
+-   `type` (type of facility), of type `String`.
+-   `location`, of type `String`.
+-   `capacity`, of type `int` (in number of people).
+
+C. In the `SportsFacility` class, implement a static method `createStadium(String type, String location, int capacity)`. The method should return a new object of type `SportsFacility` whose fields are set from the method's arguments.
+
+D. In the `SportsFacility` class, implement a non-static method `createFacility(String type, String location, int capacity)`. The method should return a new object of type `SportsFacility` whose fields are set from the method's arguments.
+
+E. Create a class `TestSportsFacility` and place it in another file in the package `pl.edu.uwm.wmii.sports`. Add a `main` method to the `TestSportsFacility` class. In it, call the methods from points C and D.
+
+11. In a single project, do the following:
+
+A. Create a class `Software`, which should be placed in the package `pl.edu.uwm.wmii.software`.
+
+B. The class should contain three attributes:
+
+-   `type` (type of software), of type `String`.
+-   `version`, of type `String`.
+-   `licenseCount` (number of licenses), of type `int`.
+
+C. In the `Software` class, implement a static method `isLicenseAvailable` with an argument of type `Software`. The method should return a boolean value indicating whether the number of licenses of the software passed as the argument is greater than 3. For an argument that is `null`, return `false`.
+
+D. In the `Software` class, implement a non-static method `isLicenseAvailable` with no argument. The method should return a boolean value indicating whether the number of licenses of the current object is greater than 3.
+
+E. Create a class `TestSoftware` and place it in another file in the package `pl.edu.uwm.wmii.software`. Add a `main` method to the `TestSoftware` class. In it, call the methods from points C and D.

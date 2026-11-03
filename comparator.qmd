@@ -1,0 +1,31 @@
+# The `Comparator` Interface
+
+1. Write a class `Person` with the fields `name` (`String`), `age` (`int`) and `height` (`double`). Write a class implementing the `Comparator` interface that compares people based on age. Create an array of 5 people and sort it by age.
+
+2. Write a class `Product` with the fields `name` (`String`), `price` (`double`) and `expirationDate` (`LocalDate`). Write a class implementing the `Comparator` interface that compares products based on expiration date. Create a list of 5 products and sort it by expiration date.
+
+3. Write a class `Car` with the fields `brand` (`String`), `productionYear` (`int`) and `price` (`double`). Write a class implementing the `Comparator` interface that compares cars based on production year. Create an array of 5 cars and sort it by production year.
+
+4. Write a class `Employee` with the fields `name` (`String`), `salary` (`double`) and `hireDate` (`LocalDate`). Write a class implementing the `Comparator` interface that compares employees based on salary. Create an array of 5 employees and sort it by salary.
+
+5. Write a class `Book` with the fields `title` (`String`), `price` (`double`) and `publicationDate` (`Date`). Write a class implementing the `Comparator` interface that compares books based on publication date. Create a list of 5 books and sort it by publication date.
+
+6. Write a class `Product` with the fields `id` (of type `int`), `name` (of type `String`) and `price` (of type `double`). Implement the generic `Comparator` interface to compare objects by the `price` field (from the lowest to the highest price), and in case of a tie by the `id` field. Create a list of 5 objects of the `Product` class and sort it according to the described criterion.
+
+7. Write a class `Person` with the fields `firstName` (of type `String`), `lastName` (of type `String`) and `birthDate` (of type `LocalDate`). Implement the generic `Comparator` interface to compare objects by the `lastName` field (alphabetically from A to Z), and in case of a tie by the `firstName` field. Create an array of 5 objects of the `Person` class and sort it according to the described criterion.
+
+8. Write a class `Order` with the fields `id` (of type `int`), `customerName` (of type `String`) and `orderDate` (of type `LocalDate`). Implement the generic `Comparator` interface to compare objects by the `orderDate` field (from the earliest to the latest date), and in case of a tie by the `id` field. Create a list of 5 objects of the `Order` class and sort it according to the described criterion.
+
+9. Write a class `Song` with the fields `title` (of type `String`), `artist` (of type `String`) and `duration` (of type `int`). Implement the generic `Comparator` interface to compare objects by the `duration` field (from the shortest to the longest song), and in case of a tie by the `title` field. Create an array of 5 objects of the `Song` class and sort it according to the described criterion.
+
+10. Write a class `Student` with the fields `id` (of type `int`), `name` (of type `String`) and `averageGrade` (of type `double`). Implement the generic `Comparator` interface to compare objects by the `averageGrade` field (from the highest to the lowest grade average), and in case of a tie by the `name` field. Create a list of 5 objects of the `Student` class and sort it according to the described criterion.
+
+11. Write a class `Product` with the fields `id` (of type `int`), `name` (of type `String`) and `price` (of type `double`). Implement two classes implementing the generic `Comparator` interface: `PriceComparator` to compare objects by the `price` field (from the lowest to the highest price) and `NameComparator` to compare objects by the `name` field (alphabetically from A to Z). Create a list of 5 objects of the `Product` class and sort it according to both criteria (first by price, and then, in case of a tie, by name).
+
+12. Write a class `Person` with the fields `firstName` (of type `String`), `lastName` (of type `String`) and `birthDate` (of type `LocalDate`). Implement two classes implementing the generic `Comparator` interface: `LastNameComparator` to compare objects by the `lastName` field (alphabetically from A to Z) and `BirthDateComparator` to compare objects by the `birthDate` field (from the oldest to the youngest person). Create an array of 5 objects of the `Person` class and sort it according to both criteria (first by last name, and then, in case of a tie, by date of birth).
+
+13. Write a class `Order` with the fields `id` (of type `int`), `customerName` (of type `String`) and `orderDate` (of type `LocalDate`). Implement two classes implementing the generic `Comparator` interface: `OrderDateComparator` to compare objects by the `orderDate` field (from the earliest to the latest date) and `CustomerNameComparator` to compare objects by the `customerName` field (alphabetically from A to Z). Create a list of 5 objects of the `Order` class and sort it according to both criteria (first by order date, and then, in case of a tie, by customer name).
+
+14. Write a class `Song` with the fields `title` (of type `String`), `artist` (of type `String`) and `duration` (of type `int`). Implement two classes implementing the generic `Comparator` interface: `DurationComparator` to compare objects by the `duration` field (from the shortest to the longest song) and `ArtistTitleComparator` to compare objects by the `artist` field (alphabetically from A to Z) and, in case of a tie, by the `title` field. Create an array of 5 objects of the `Song` class and sort it according to both criteria (first by track length, and, in case of a tie, by artist and title).
+
+15. Write a class `Student` with the fields `id` (of type `int`), `name` (of type `String`) and `averageGrade` (of type `double`). Implement two classes implementing the generic `Comparator` interface: `AverageGradeComparator` to compare objects by the `averageGrade` field (from the highest to the lowest grade average) and `IdComparator` to compare objects by the `id` field (from the lowest to the highest identifier). Create a list of 5 objects of the `Student` class and sort it according to both criteria (first by grade average, and then, in case of a tie, by identifier).

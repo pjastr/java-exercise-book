@@ -1,0 +1,48 @@
+# Final Fields, Methods and Classes
+
+1.  Perform the following steps in order:
+
+    A. Create a class `Planet` with one final field `name`. Try to change the value of the `name` field after it has been initialized. Analyze the result.
+
+    B. Add to the `Planet` class a method `changeName` that tries to change the name of the planet. What is the result of trying to change a final field using a method?
+
+
+2. Create a class `Car` with two fields: `brand` (a regular field) and `VIN` (a final field - Vehicle Identification Number). Create several `Car` objects and try to change the `VIN` field for each of them. Analyze the result.
+
+3. Create a class `Athlete` with one final field `name` and a field `points`. Create an array of athletes and try to change the `name` field for one of the athletes. Analyze the result.
+
+4. Create a class `Person` with one final field `nationalId` (national identification number). Then create a class `Student` that inherits from the `Person` class. Can you change the `nationalId` field in the `Student` class? What happens if you try to do it? Analyze the results.
+
+5. Create a base class `Electronics` with a final method `turnOn` that prints "Device turned on". Then create a subclass `Television` and try to override the `turnOn` method. Observe what happens.
+
+6. Create a class `Computer` with a final method `boot` and a regular method `launchApplication`. In the subclass `Laptop`, try to override both methods. Check which of the methods can be overridden and which cannot.
+
+7. Create a final class `ImmutableData` with some attributes and methods. Then try to create a subclass `VariableData` that inherits from the `ImmutableData` class. Consider why you cannot inherit from a class marked as `final`.
+
+8. Create a class `Game` whose constructor calls a final method `initialize` (which initializes some data). Create a subclass `RPG` that tries to customize the constructor of the base class. Make sure that the `initialize` method works correctly even though it is marked as `final`.
+
+9. Create a class `MathConstant` with a final field `PI` that is initialized with the value 3.14159. In the subclass `PhysicalConstant`, try to create a method that tries to change the value of `PI`. Consider why the value of a final field cannot be changed after it has been initialized.
+
+10. Perform the following steps:
+
+- Create a class `ImmutableDate` with the private final fields `year`, `month`, `day`. 
+- Add a parameterized constructor to initialize all the fields.
+- Add the public methods `getYear`, `getMonth`, `getDay` to retrieve the values of the fields, but do not add any methods that allow modifying them.
+- Implement the methods `toString`, `equals` and `hashCode`.
+- Check whether such a class can be considered immutable.
+
+11. Perform the following steps:
+
+- Create a class `ImmutablePoint` with the private final fields `x`, `y`, `z` (the coordinates of the point).
+- Add a parameterized constructor to initialize all the fields.
+- Add the public methods `getX`, `getY`, `getZ` to retrieve the values of the fields, but do not add any methods that allow modifying them.
+- Implement the methods `toString`, `equals` and `hashCode`.
+- Check whether such a class can be considered immutable.
+
+12. Perform the following steps:
+
+- Create a class `ImmutableBook` with the private final fields `title`, `author`, `isbn` (ISBN number).
+- Add a parameterized constructor to initialize all the fields.
+- Add the public methods `getTitle`, `getAuthor`, `getIsbn` to retrieve the values of the fields, but do not add any methods that allow modifying them.
+- Implement the methods `toString`, `equals` and `hashCode`.
+- Check whether such a class can be considered immutable.

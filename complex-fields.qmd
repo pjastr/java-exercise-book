@@ -1,0 +1,28 @@
+# Complex Fields in a Class
+
+1.  Create a class `MusicAlbum` with the fields `title`, `artist` and `ratings` (as an array with elements of type double).  Add a method that allows adding and removing ratings. Create a class `RockAlbum` that inherits from the `MusicAlbum` class. The `RockAlbum` class should have an additional field `rockGenre`. Add constructors, getter and setter methods, and the methods `toString()`, `equals()` and `hashCode()` for each of the classes. Write a program that tests the defined classes and methods.
+
+2. Create a class `Book` with the fields `title`, `author` and `reviews` (as an array with elements of type double). Add methods that allow adding and removing reviews. Create a class `FantasyBook` that inherits from the `Book` class. The `FantasyBook` class should have an additional field `fantasySubgenre`. Add constructors, getter and setter methods, and the methods `toString()`, `equals()` and `hashCode()` for each of the classes. Write a program that tests the defined classes and methods.
+
+3. Create a class `ComputerGame` with the fields `title`, `producer` and `ratings` (as an array with elements of type double). Add methods that allow adding and removing ratings. Create a class `RPGGame` that inherits from the `ComputerGame` class. The `RPGGame` class should have an additional field `gameWorld`. Add constructors, getter and setter methods, and the methods `toString()`, `equals()` and `hashCode()` for each of the classes. Write a program that tests the defined classes and methods.
+
+4. Create a class `University` with the fields `name`, `location` and `studyPrograms` (as an array with elements of type `String`). Add methods that allow adding and removing study programs. Create a class `TechnicalUniversity` that inherits from the `University` class. The `TechnicalUniversity` class should have an additional field `numberOfLaboratories`. Add constructors, getter and setter methods, and the methods `toString()`, `equals()` and `hashCode()` for each of the classes. Write a program that tests the defined classes and methods.
+
+5. Create a class `ArtGallery` with the fields `name`, `city` and `paintings` (as an array with elements of type `String`). Add methods that allow adding and removing paintings. Create a class `ContemporaryGallery` that inherits from the `ArtGallery` class. The `ContemporaryGallery` class should have an additional field `numberOfInstallations`. Add constructors, getter and setter methods, and the methods `toString()`, `equals()` and `hashCode()` for each of the classes. Write a program that tests the defined classes and methods.
+
+6. Create a class `Car` with the fields `brand`, `model` and `engineVariants` (as an array with elements of type `String`). Add methods that allow adding and removing engine variants. Create a class `ElectricCar` that inherits from the `Car` class. The `ElectricCar` class should have an additional field `range`. Add constructors, getter and setter methods, and the methods `toString()`, `equals()` and `hashCode()` for each of the classes. Write a program that tests the defined classes and methods.
+
+7. Perform the following steps:
+
+- Create a class `Engine` with the fields `power`, `type` (engine type) and `serialNumber`. Add a parameterized constructor, getters, setters, and the methods `toString`, `equals` and `hashCode`.
+- Create a class `Car`. The `Car` class should have the fields `make`, `model` and `engine` of type `Engine`. Add a parameterized constructor that takes an `Engine` object as a parameter, getters, setters, and the methods `toString`, `equals` and `hashCode`.
+
+8. Perform the following steps:
+
+- Create a class `Processor` with the fields `frequency`, `cores` (number of cores) and `manufacturer`. Add a parameterized constructor, getters, setters, and the methods `toString`, `equals` and `hashCode`.
+- Create a class `Computer`. The `Computer` class should have the fields `brand`, `model` and `processor` of type `Processor`. Add a parameterized constructor that takes a `Processor` object as a parameter, getters, setters, and the methods `toString`, `equals` and `hashCode`.
+
+9. Perform the following steps:
+
+- Create a class `Address` with the fields `street`, `city`, `zipCode` and `country`. Add a parameterized constructor, getters, setters, and the methods `toString`, `equals` and `hashCode`.
+- Create a class `UserAccount`. The `UserAccount` class should have the fields `username`, `email` and `address` of type `Address`. Add a parameterized constructor that takes an `Address` object as a parameter, getters, setters, and the methods `toString`, `equals` and `hashCode`.

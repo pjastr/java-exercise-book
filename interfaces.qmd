@@ -1,0 +1,91 @@
+# Interfaces
+
+
+1. Write an interface named `LoudAnimal` that will have one method named `makeNoise()`. Then create two classes, `Dog` and `Cat`, that will implement this interface. For each class, implement the `makeNoise()` method so that it prints the appropriate animal sound.
+
+2. Create an interface named `MyComparator` that will contain a method `compare(int a, int b): int`. This method should return -1 if `a < b`, 0 if `a == b` and 1 if `a > b`. Then create a class `TestMyComparator` that will implement this interface. In this class, implement the `compare` method according to its description.
+
+3. Suppose we have an interface `MusicPlayer` with the methods `turnOn()`, `turnOff()` and `nextTrack()`. Create a class `Radio` that will implement this interface. The `turnOn()` method should print the message "Radio turned on", the `turnOff()` method - "Radio turned off", and `nextTrack()` - "Radio station changed".
+
+4. Write an interface `Converter` with three abstract methods: `convertToEuro(double amount)` returning `double`, `convertToUSD(double amount)` returning `double`, and `getConversionRate(String currency)` taking the name of a currency as a `String` and returning `double`. Create two classes, `CurrencyConverter` and `UnitConverter`, that implement this interface. In a separate class `ConverterTest`, test the implementation of the methods for objects of both classes.
+
+5. Create an interface `Authentication` with three abstract methods: `login(String username, String password)` returning `boolean`, `logout()` returning `void`, and `resetPassword(String username, String oldPassword, String newPassword)` returning `boolean`. Create two classes, `UserAuthentication` and `AdminAuthentication`, that implement this interface. In the `AuthenticationTest` class, test the implementations of the methods for objects of both classes.
+
+6. Design an interface `Sensor` with three abstract methods: `readValue()` returning `double`, `getStatus()` returning `String`, and `reset()` returning `void`. Create two classes, `TemperatureSensor` and `PressureSensor`, that implement this interface. In the `SensorTest` class, test how the methods work for objects of both classes.
+
+7. Develop an interface `MediaPlayer` with three abstract methods: `play(String trackName)` returning `void`, `pause()` returning `void`, and `getCurrentTrack()` returning `String`. Create two classes, `AudioPlayer` and `VideoPlayer`, that implement this interface. In a separate class `MediaPlayerTest`, check how the methods work for objects of both classes.
+
+8. Create an interface `Storage` with three abstract methods: `save(String data)` returning `boolean`, `delete(String identifier)` returning `boolean`, and `retrieve(String identifier)` returning `String`. Design two classes, `FileStorage` and `DatabaseStorage`, that implement this interface. In the `StorageTest` class, test the methods for objects of both classes.
+
+9. Perform the following steps:
+
+- Write an interface `DataProcessor` with two abstract methods: `processData(String data)` returning `String` and `isValid(String data)` returning `boolean`.
+- Create a class `TextProcessor` that implements `DataProcessor`. In the `processData` method, return the data in reverse order, and in the `isValid` method, check that the data is not an empty string. Make the methods null-safe. 
+- Create a second class `NumberProcessor` that also implements `DataProcessor`. In the `processData` method, return the data with the additional text "Processed: " at the beginning, and in the `isValid` method, check whether the data is a number.
+- In the `TestDataProcessor` class, create objects of both classes and test their methods.
+
+Hint: To check that a string is a number, you can use a regular expression: 
+
+```java
+str.matches("-?\\d+(\\.\\d+)?")
+```
+
+10. Perform the following steps:
+
+- Create an interface `VehicleManager` with two abstract methods: `startEngine()` returning `String` and `getFuelLevel()` returning `int`.
+- Create a class `Car` implementing `VehicleManager`. In the `startEngine` method return "Car engine started", and in `getFuelLevel` return the value 50.
+- Create a class `Motorcycle`, also implementing `VehicleManager`. In `startEngine` return "Motorcycle engine started", and in `getFuelLevel` return the value 30.
+- In the `VehicleManagerTest` class, create objects of both classes and test their methods.
+
+11. Perform the following steps:
+
+- Create an interface `AnimalSound` with one method `makeSound()`.
+- Extend this interface by creating an interface `DomesticAnimalSound` that adds a method `makeHappySound()`.
+- Create a class `Dog` that implements `DomesticAnimalSound`. The `makeSound()` method should return the string "Woof", and `makeHappySound()` - "Wag tail".
+- In a separate test class (`TestAnimals`), create a `Dog` object and call both methods.
+
+12. Perform the following steps:
+
+- Create an interface `PowerControl` with a method `turnOn()`.
+- Extend this interface by creating `AdvancedPowerControl`, which adds a method `setPowerSavingMode()`.
+- Create a class `SmartLamp` implementing `AdvancedPowerControl`. The `turnOn()` method should activate the lamp, and `setPowerSavingMode()` should switch it to power-saving mode (the methods should display appropriate messages).
+- In a separate test class (`TestDevices`), create a `SmartLamp` object and call both methods.
+
+13. Perform the following steps:
+
+- Create an interface `Drawable` with a method `draw()`.
+- Extend this interface by creating `ColorDrawable`, which adds a method `setColor(String color)`.
+- Create a class `Circle` implementing `ColorDrawable`. The `draw()` method should draw a circle, and `setColor()` should change the color of the circle (the methods should display appropriate messages).
+- In a separate test class (`TestDrawing`), create a `Circle` object, set the color and draw the circle using both methods. 
+
+14.  Create an interface `Drawable` with:
+
+- An abstract method `draw()`.
+- A default method `display()` that displays the message "Displaying Drawable".
+- A static method `getType()` that returns the `String` "Drawable Type".
+
+Create the classes `Circle` and `Rectangle` that implement `Drawable`. `draw()` in `Circle` should display "Drawing Circle", and in `Rectangle` - "Drawing Rectangle". Create a test class `DrawableTester`. Create `Circle` and `Rectangle` objects, call `draw()` and `display()` on them, and call `Drawable.getType()` statically.
+
+15. Create an interface `SoundPlayer` with:
+
+- An abstract method `playSound()`.
+- A default method `stopSound()` that displays the message "Sound Stopped".
+- A static method `getDeviceType()` that returns the `String` "Sound Device".
+
+Create the classes `MusicPlayer` and `Radio` that implement `SoundPlayer`. `playSound()` in `MusicPlayer` should display "Playing Music", and in `Radio` - "Playing Radio". Create a test class `SoundTester`. Create `MusicPlayer` and `Radio` objects, call `playSound()` and `stopSound()` on them, and call `SoundPlayer.getDeviceType()` statically.
+
+
+16. Create an interface `MemoryManager` with:
+
+- An abstract method `allocateMemory(int size)`.
+- A default method `freeMemory()` that displays the message "Memory Freed".
+- A static method `getMemoryType()` that returns the `String` "Memory Type".
+
+Create the classes `RAMManager` and `DiskManager` that implement `MemoryManager`. `allocateMemory(int size)` in `RAMManager` should display "Allocating RAM Memory", and in `DiskManager` - "Allocating Disk Space". Create a test class `MemoryTester`. Create `RAMManager` and `DiskManager` objects, call `allocateMemory(int size)` and `freeMemory()` on them, and call `MemoryManager.getMemoryType()` statically.
+
+17. Create an interface `VATCalculator` with:
+
+- A field `double vatRate` set to the standard VAT rate (e.g. 23%).
+- A static method `calculateWithVAT(double price)` that calculates and returns the price of a product including VAT.
+
+Create a test class `VATTest` that calls the `calculateWithVAT(double price)` method with a sample product price and displays the result.

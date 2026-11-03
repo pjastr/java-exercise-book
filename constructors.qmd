@@ -1,0 +1,63 @@
+# Constructor
+
+1.  Write a class `Book` that contains three fields: `title`, `author`, `publicationYear`. Then implement two constructors - a default one that takes no arguments, and a second one that takes three arguments corresponding to the fields of the class. In the case of the second constructor, the parameter names must be the same as the field names. Check whether you are able to correctly assign values to the fields of the class using the `this` keyword.
+
+2.  Design a class `Person` that contains two fields: `firstName`, `lastName`. Implement a constructor that takes two arguments corresponding to the fields of the class. The parameter names must be the same as the field names. Try to assign values to the fields of the class without using the `this` keyword. Is it possible? If not, why not?
+
+3.  Create a class `Car` that contains three fields: `brand`, `model`, `productionYear`. Implement three constructors - the first a default one, the second taking two arguments (`brand` and `model`), the third taking three arguments (`brand`, `model`, `productionYear`). In the case of the second and third constructors, the parameter names must be the same as the field names. Use the `this` keyword to distinguish the fields of the class from the parameters.
+
+4.  Write a class `Person` that has the fields `firstName`, `lastName` and `age`. Define two constructors in it, one taking all three parameters and the other only the first name and last name. The second constructor should call the first one, passing it a default age value of 0.
+
+5.  Design a class `Square` that has a field `side` and a constructor that allows setting the value of this field. Then write a second constructor that takes no arguments and only calls the first constructor with a default value of 1.
+
+6.  Define a class `Car` that has the fields `brand`, `model` and `productionYear`. The class should contain two constructors: the first taking all three parameters, and the second only the brand and model. The second constructor should call the first one, passing it the current year as the default value of `productionYear`.
+
+7.  Create a class `Dog` that has the fields `name`, `breed` and `age`. The class should have two constructors: one that takes all three parameters, and a second one that takes only the name and breed. The second constructor should call the first one, passing it a default age value of 1.
+
+8.  Write a class `Student` that has the fields `firstName`, `lastName` and `fieldOfStudy`. Define two constructors in it, one taking all three parameters and the other only `firstName` and `lastName`. The second constructor should call the first one, passing it `unknown` as the default value of `fieldOfStudy`.
+
+9.  Define a class `Employee` that has the fields `firstName`, `lastName` and `salary`. Write a constructor that takes two arguments (`firstName` and `lastName`), and an initializer block that sets the value of `salary` to 3000. Check what happens when you try to overwrite the value of `salary` in the constructor.
+
+10. Design a class `Car` that has the fields `brand`, `model` and `price`. Write a constructor that takes two arguments (`brand` and `model`), and in an initializer block set the default value of `price` to 50000. See what happens when you try to change the value of `price` in the constructor.
+
+11. Define a class `Phone` that has the fields `manufacturer`, `model` and `operatingSystem`. In an initializer block, set the value of `operatingSystem` to `Android`. Then write a constructor that takes two arguments (`manufacturer` and `model`) and tries to overwrite the value of operatingSystem with `iOS`. Check which value is ultimately assigned to the operatingSystem field.
+
+12. Create a class `Car` containing the private fields `brand`, `model`, `productionYear`, `mileage` and `color`. Add a constructor that takes all the fields as arguments. Add accessor methods (getters and setters) for all the fields. Then add a method `displayInformation()` that displays all the information about the car.
+
+13. Create a class `Person` with the private fields `firstName`, `lastName`, `age`, `address`. Add a constructor that takes all the fields as arguments. Add accessor methods (getters and setters) and a method `introduceYourself()` that returns a string with information about the person.
+
+14. Create a class `Book` with the private fields `title`, `author`, `publicationYear`, `publisher` and `numberOfPages`. Add a constructor that takes all the fields as arguments. Add accessor methods (getters and setters) and a method `showInformation()` that displays information about the book.
+
+15. Create a class `Point2D` with the private fields `x` and `y`, representing the coordinates of a point on a plane. Add a constructor that takes the coordinates as arguments. Add accessor methods (getters and setters) and a method `distance(Point2D anotherPoint)` that calculates the distance between two points on the plane.
+
+16. Create a class `Rectangle` with the private fields `width` and `height`. Add a constructor that takes the side lengths as arguments. Add accessor methods (getters and setters) and the methods `area()` and `perimeter()`, which calculate the area and perimeter of the rectangle.
+
+17. Create a class `Circle` with the private field `radius`. Add a constructor that takes the radius as an argument. Add accessor methods (getters and setters) and the methods `area()` and `circumference()`, which calculate the area and circumference of the circle.
+
+18. Create a class `Student` with the private fields `firstName`, `lastName`, `indexNumber`, `yearOfStudy` and `gradeAverage`. Add a constructor that takes all the fields as arguments. Add accessor methods (getters and setters) and a method `showInformation()` that displays information about the student.
+
+19. Create a class `Employee` with the private fields `firstName`, `lastName`, `position`, `age` and `salary`. Add a constructor that takes all the fields as arguments. Add accessor methods (getters and setters) and a method `showInformation()` that displays information about the employee.
+
+20. Create a class `BankAccount` with the private fields `accountNumber`, `owner`, `balance` and `accountType`. Add a constructor that takes all the fields as arguments. Add accessor methods (getters and setters) and the methods `deposit(double amount)` and `withdraw(double amount)`, which respectively add or subtract an amount from the account balance.
+
+21. Create a class `Television` with the private fields `brand`, `screenDiagonal`, `resolution`, `isSmartTV` and `price`. Add a constructor that takes all the fields as arguments. Add accessor methods (getters and setters) and a method `showInformation()` that displays information about the television.
+
+22. Create a class `Gradebook` with the private fields `firstName`, `lastName` and `grades` (as an `ArrayList` of type `int`). Add a constructor that takes firstName and lastName as arguments. Add accessor methods (getters and setters) and the methods `addGrade(int grade)` and `removeGrade(int index)`, which respectively add or remove a grade from the list of grades. Also add a method `averageGrade()` to calculate and return the average of the grades.
+
+23. Create a class `TemperatureHistory` with the private field `temperatures` (as an `ArrayList` of type `double`). Add a default constructor. Add accessor methods (getters and setters) and the methods `addTemperature(double temperature)` and `removeTemperature(int index)`, which respectively add or remove a temperature from the list of temperatures. Also add a method `averageTemperature()` to calculate and return the average of the temperatures.
+
+24. Create a class `Results` (test results) with the private fields `firstName`, `lastName` and `results` (as an array of type `int`). Add a constructor that takes `firstName`, `lastName` and the array size as arguments. Add accessor methods (getters and setters) and a method `addResult(int index, int result)` that adds a test result at the given index. Also add a method `averageResult()` to calculate and return the average result.
+
+25. Create a class `TaskManager` with the private field `taskPriorities` (as an `ArrayList` of type `int`). Add a default constructor. Add accessor methods (getters and setters) and the methods `addPriority(int priority)` and `removePriority(int index)`, which respectively add or remove a priority from the list of priorities. Also add a method `highestPriority()` to find and return the value of the highest priority.
+
+26. Create a class `Warehouse` with the private field `productQuantities` (as an array of type `int`). Add a constructor that takes the array size as an argument. Add accessor methods (getters and setters) and a method `addProducts(int index, int quantity)` that adds the specified quantity of products at the given index. Also add a method `totalProducts()` to calculate and return the total of all products in the warehouse.
+
+27. Define a class `Person` that has the fields `firstName`, `lastName` and `age`. Write a constructor that takes three arguments and validates them before assigning them to the corresponding fields. The person's age (`age`) should not be negative, and `firstName` and `lastName` should not be empty or null (for invalid values, set an empty string or zero individually).
+
+28. Create a class `Point` representing a point in 3D space, with the fields `x`, `y`, `z`. Write a constructor that takes these three values and checks whether they are in the range from -100 to 100. If the values are not in this range, they should be set to the nearest bound.
+
+29. Design a class `Car` that has the fields `brand`, `model` and `productionYear`. Write a constructor that takes three arguments. The constructor's task is to check whether `productionYear` is not greater than the current year and whether `brand` and `model` are not empty or null (for invalid values, set an empty string or the current year individually).
+
+Hint: use `Calendar.getInstance().get(Calendar.YEAR)` to get the current year.
+
+30. Define a class `BankAccount` that has the fields `accountNumber` and `balance`. Write a constructor that takes two arguments. Before assigning a value to the `accountNumber` field, check whether it has 26 digits, and before assigning a value to the `balance` field, check whether `balance` is not negative (for invalid values, set the account number so that it consists only of ones and the balance to zero).

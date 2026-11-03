@@ -1,0 +1,60 @@
+# Arrays
+
+1. Write a program that creates a one-dimensional array of 10 integers and then displays them on the console in the reverse order of input.
+
+2. Create a program that creates a one-dimensional array of 20 random numbers in the range from 1 to 100, and then calculates and displays their average value.
+
+3. Write a program that creates a one-dimensional array of 15 integers, and then calculates and displays the largest and the smallest value in the array.
+
+4. Create a program that creates a one-dimensional array of 30 integers. Then ask the user to enter any number. The program should display whether the given number is in the array, and also how many times it appears in it.
+
+5. Write a program that creates a one-dimensional array of 10 integers. The program should calculate and display the sum of those numbers that are even.
+
+6. Write a program that creates a one-dimensional array of 10 floating-point numbers, and then calculates and displays their sum.
+
+7. Create a program that creates a one-dimensional array of 20 floating-point numbers, and then finds and displays the mean and the median of these numbers.
+
+8. Write a program that creates a one-dimensional array of 10 floating-point numbers. The program should calculate and display the sum of those numbers that are greater than 0.5.
+
+9. Write a program that creates a one-dimensional array of 20 integers, and then calculates and displays the number of even and odd numbers in the array.
+
+10. Create a program that creates a one-dimensional array of 30 integers. Then the program should calculate and display how many of the numbers are squares of another integer.
+
+11. Write a program that creates a one-dimensional array of 50 integers. The program should calculate and display how many of the numbers are prime numbers.
+
+12. Write a program that creates a one-dimensional array of 15 integers, and then calculates and displays the sum of the numbers that are divisible by 3.
+
+13. Write a static method `minimumValue` that takes an array of integers as an argument and returns the smallest number in the array. Assume that the array will always have at least one element. If the array contains only one element, return that element. Create a test case.
+
+14. Write a static method `average` that takes an array of floating-point numbers as an argument and returns the arithmetic mean of all the numbers in the array. If the array is empty, return 0. Create a test case.
+
+15. Write a static method `reverseArray` that takes an array of integers as an argument and returns a new array, but with the order of the elements reversed. For example, for the array [1, 2, 3, 4, 5], the function should return [5, 4, 3, 2, 1]. Create a test case. 
+
+16. Write a static method `reverseArray` that takes an array of integers as an argument. The method reverses the order of the elements in the array and should be a procedure (return nothing). For example, for the array [1, 2, 3, 4, 5], the function should change the array to [5, 4, 3, 2, 1]. Create a test case.
+
+17. Write a static method `countZeros` that takes an array of integers as an argument and returns the number of occurrences of zero in the array. For example, for the array [0, 1, 2, 0, 3, 0, 4], the function should return 3. Create a test case.
+
+18. Write a static method `oddElementsSum` that takes an array of integers as an argument and returns the sum of all odd numbers in the array. If there are no odd numbers in the array, the function should return 0. Create a test case.
+
+19. Write a static method `copyArray` that takes an array of integers as an argument and returns a new array that is a copy of the original. The function should copy the array manually, element by element, without using the system copy methods. Create a test case.
+
+20. Write a static method `copyArrayReverse` that takes an array of integers as an argument and returns a new array that is a reversed copy of the original. For example, for the array [1, 2, 3, 4, 5], the function should return [5, 4, 3, 2, 1]. Create a test case.
+
+21. Write a static method `copyArrayEven` that takes an array of integers as an argument and returns a new array containing only the even numbers from the original array. For example, for the array [1, 2, 3, 4, 5], the function should return [2, 4]. If there are no even numbers in the array, the function should return an empty array. Create a test case.
+
+22. Write a static method `copyArrayWithIndex` that takes an array of integers and a start and end index as arguments. The function should return a new array containing the elements of the original array from the start index to the end index (inclusive). For example, for the array [1, 2, 3, 4, 5] and the indices 1 and 3, the function should return [2, 3, 4]. Create a test case.
+
+23. Write a static method `mergeArrays` that takes two arrays of integers as arguments. The function should return a new array that is the concatenation of both original arrays. For example, for the arrays [1, 2, 3] and [4, 5, 6], the function should return [1, 2, 3, 4, 5, 6]. Create a test case.
+
+24. Write a method `sortArray` that takes an array of integers as an argument and returns a new array that is a sorted version of the original array. Use the `Arrays.sort()` method from the `java.util.Arrays` library to sort the array. Create a test case.
+
+25. Write a method `checkEquality` that takes two arrays of integers as arguments and returns `true` if the arrays are equal and `false` otherwise. Use the `Arrays.equals()` method from the `java.util.Arrays` library to compare the arrays. Create a test case.
+
+26. Write a method `fillArray` that takes an array of integers and an integer as arguments. The method should fill the array with the given number, using the `Arrays.fill()` method from the `java.util.Arrays` library. Create a test case.
+
+27. Write a method `printArray` that takes an array of integers as an argument and prints its contents to the console. Use the `Arrays.toString()` method from the `java.util.Arrays` library, which returns a textual representation of the array. Create a test case.
+
+28. Write a method `copyArray` that takes an array of rational numbers as an argument. The method should return a new array that is a copy of the passed array. Use the `Arrays.copyOf()` method from the `java.util.Arrays` library to copy the array. Create a test case.
+
+29. Write a method `sortArray` that takes an array of rational numbers as an argument. The method should sort the array in ascending order, using the `Arrays.sort()` method from the `java.util.Arrays` library. Create a test case.
+

@@ -1,0 +1,48 @@
+# The Concept of a Class/Object
+
+1.  Create a class `Dog` with the fields `name`, `breed` and `age`. Write a method `bark()` that prints `"Wow Wow"` to the console. Create a test case to call the method at least once.
+
+2.  Create a class `Car` with the fields `brand`, `model` and `speed`. Write the methods `accelerate(int value)` and `decelerate(int value)`, which respectively increase and decrease the speed by the given value. Create a test case to call each method at least once.
+
+3.  Create a class `BankAccount` with the field `balance`. Write the methods `deposit(double amount)` and `withdraw(double amount)`, which respectively increase and decrease the balance by the given amount. Create a test case to call each method at least once.
+
+4.  Create a class `Point` with two fields, `x` and `y`, representing coordinates on a plane. Write a method `distance(Point otherPoint)` that calculates the distance between the current point and another point. Create a test case to call the method at least once.
+
+5.  Create a class `Time` with the fields `hours` and `minutes`. Write a method `addTime(Time otherTime)` that adds the time given as an argument to the current time and returns a new object of the Time class. Make sure that the minutes and hours do not exceed 59 and 23, respectively. Create a test case to call the method at least once.
+
+6.  Complete the two subtasks in order:
+
+    A. Create a class `Car` containing a public field `brand`. In the `TestCar` class, create an object of the `Car` class, assign it the value `null` and try to access the `brand` field. What is the result?
+
+    B. Modify the code from subtask A so that it checks whether the `Car` object is `null` before accessing the `brand` field. What is the result?
+
+7.  Create a class `Person` containing the field `name`. In the `TestPerson` class, create two variables of the `Person` class - `person1` and `person2` - both referring to the same object. Change the value of the `name` field through `person1` and print the value of the `name` field through `person2`. Analyze the result.
+
+8.  Create an array of objects of the `Car` class (the class contains a public field `brand`). Then try to access the `brand` field of one of the objects in the array without first initializing the array with `Car` objects. Analyze the result.
+
+9.  Create an array list (ArrayList) of objects of the `Person` class (the class contains a public field `name`). Then try to access the `name` field of one of the objects in the list without first adding any `Person` objects to the list. Analyze the result.
+
+10. Create a class `Dog` with a method `bark` that prints the message "Woof! Woof!". In the `TestDog` class, create a `Dog` object, assign it the value `null` and try to call the `bark` method. Analyze the result.
+
+11. Create a class `Cat` with the field `name`. Add to the `Cat` class a method `createCat` that returns a new object of the `Cat` class. The method should set the `name` field to the given value, but only if the value is not `null`. Otherwise, it should return `null`. In the `TestCat` class, use the `createCat` method to create a `cat` object, and then try to print the value of the `name` field. What happens if you pass `null` as an argument to the `createCat` method? Analyze the result.
+
+12. Perform the following steps in order:
+
+    A.  Create a class `Person` with the field `name`. Add to the class a method `introduceYourself` that displays the message "Hi, I'm" followed by the person's name. In the `TestPerson` class, create a `Person` object and call the `introduceYourself` method on it. Do you need to use the `this` keyword in the implementation of the method?
+
+    B.  Add to the `Person` class a method `sayHello` that takes another object of the `Person` class as an argument and displays the message "Hello," followed by the other person's name. Analyze how it works.
+
+    C.  Add to the `Person` class a method `changeName` that takes a string as an argument and assigns it to the `name` field. Create a `Person` object and use the `changeName` method to change its name. Then call the `introduceYourself` method. Has the name been changed? Do you need to use the `this` keyword in the implementation of the method?
+
+    D.  Add to the `Person` class a method `swapNames` that takes another object of the `Person` class as an argument and swaps the names of the two people. Create two `Person` objects and use the `swapNames` method to swap their names. Then call the `introduceYourself` method on both objects. Have the names been swapped?
+
+13. Perform the following steps in order:
+
+    A.  Create a class `Counter` with one field, `number`. Add to the class a method `increase` that takes a parameter of type int and increases the value of the `number` field by the value of that parameter. In the `TestCounter` class, create a variable of type int, pass it to the `increase` method and check whether the value of the variable changed after calling the method.
+
+    B.  Add to the `Counter` class a method `add` that takes another `Counter` object and adds the value of its `number` field to the `number` field of the current object. Create two `Counter` objects in the `TestCounter` class and use the `add` method. Check whether the object passed as the argument of the `add` method changed its value after calling the method.
+
+    C.  Create a class `Modifier` that has a method `changeValue` which takes an int as an argument. Inside the method, change the value of the argument to a different one. In the `TestCounter` class, create an int variable, then pass it to the `changeValue` method and check whether the value of the variable has changed.
+
+    D.  Add to the `Modifier` class a method `changeObject` that takes a `Counter` object as an argument. Inside the method, change the value of the `number` field of the `Counter` object to a different one. In the `TestCounter` class, create a `Counter` object, then pass it to the `changeObject` method and check whether the value of the object's `number` field has changed.
+

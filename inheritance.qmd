@@ -1,0 +1,49 @@
+# Inheritance
+
+1.  Perform the following steps in order:
+
+    A.  Create a base class `Person` with a private field `firstName` and a protected field `lastName`. Then create a class `Employee` that inherits from the `Person` class. In the `Employee` class, try to refer to both fields and notice which of them are accessible.
+    B.  Based on the `Person` class from the previous subtask, create accessor methods (getters) for both fields. In the `Employee` class, create a method `displayData` that uses these accessor methods to print information about the employee. Consider why accessor methods are used to access private fields.
+
+2.  Create a base class `Book` with a private field `title` and a protected field `author`. Create a subclass `Ebook` that inherits from the `Book` class. In the `Ebook` class, try to change the access modifier of both fields from the base class. Consider why one of the fields allows this and the other does not.
+
+3.  Create a class `Tool` with a protected constructor that takes the name of the tool. Then create a subclass `Hammer` that inherits from the `Tool` class. In the `Hammer` class, create a constructor that uses the constructor of the base class. Consider why this scenario would not be possible if the `private` modifier were used for the base class constructor.
+
+4.  Create two different packages: `animals` and `mammals`. In the `animals` package, create a base class `Animal` with a protected field `species` and a private field `age`. In the `mammals` package, create a class `Dog` that inherits from the `Animal` class. Try to refer to both fields of the base class in the `Dog` class and notice which of them are accessible.
+
+5.  Perform the following steps in order:
+
+    A.  Create a base class `Vehicle` with a method `drive` that prints "The vehicle is moving.". Then create a subclass `Car` that overrides the `drive` method so that it prints "The car is moving.". Create an object of the `Car` class and call its `drive` method to observe the result.
+    B.  Based on the `Vehicle` class from the previous subtask, in the `Car` class, override the `drive` method so that it calls the original method from the base class and additionally prints information specific to the `Car` class. Use the `super` keyword to call the method from the base class.
+
+6.  Create a class `Calculator` with a method `add` that takes two arguments of type `int` and returns their sum. Then create a subclass `ExtendedCalculator` that overrides the `add` method in such a way that it takes three arguments of type `int` and returns their sum. Consider whether this is actually method overriding or perhaps something else.
+
+7.  Create a base class `Base` with a static method `info` that prints "This is the base class.". Then create a subclass `Child` and try to override the static method `info` so that it prints "This is the child class.". Consider the behavior of methods "overridden" this way and why such hiding is treated differently.
+
+8.  Create a base class `Computer` with a protected method `start` that prints "Computer started.". Create a subclass `Laptop` that tries to override the `start` method, but with the `public` access modifier. Try to compile the code and consider why there are certain restrictions on overriding methods with respect to access modifiers.
+
+9.  Create a base class named `Vehicle` with the fields `brand` and `model`. This class should have a constructor that takes both of these parameters. Then create a subclass named `Car` that inherits from the `Vehicle` class. The `Car` class should have an additional field `numberOfDoors`. Create a constructor for the `Car` class that takes all three parameters and uses the constructor of the base class. Create a test case.
+
+10. Create a base class named `Animal` with a field `name` and a constructor that assigns the default name "Unknown". Then create a class `Dog` that inherits from the `Animal` class. Do not create an additional constructor in it. Check what animal is created when you create a new instance of the `Dog` class.
+
+11. Create a base class named `Building` with the fields `height` and `color`. This class should have two constructors: one taking both parameters and a second, parameterless one that assigns default values. Create a subclass `House` with an additional field `numberOfRooms`. The `House` class should have a constructor that uses an overloaded constructor of the base class. Create a test case.
+
+12. Create three classes: `Entity`, `Human` and `Programmer`. The `Human` class should inherit from the `Entity` class, and the `Programmer` class from the `Human` class. In each class, add a constructor that prints information about the creation of an instance of that class. Create an instance of the `Programmer` class and observe the order in which the constructors are called.
+
+13. Create a class `Vehicle` with the fields `brand`, `model` and `yearOfProduction`. Create classes `Car` and `Motorcycle` that inherit from the `Vehicle` class. The `Car` class should have an additional field `numberOfDoors`, and the `Motorcycle` class a field `engineCapacity`. Add constructors, getter and setter methods, and the methods `toString()`, `equals()` and `hashCode()` for each of the classes. Write a program that tests the defined classes and methods.
+
+14. Create a class `Employee` with the fields `firstName`, `lastName` and `salary`. Create classes `Programmer` and `Tester` that inherit from the `Employee` class. The `Programmer` class should have an additional field `programmingLanguage`, and the `Tester` class a field `testingType`. Add constructors, getter and setter methods, and the methods `toString()`, `equals()` and `hashCode()` for each of the classes. Write a program that tests the defined classes and methods.
+
+15. Create a class `Property` with the fields `address`, `size` and `price`. Create classes `House` and `Apartment` that inherit from the `Property` class. The `House` class should have an additional field `numberOfFloors`, and the `Apartment` class a field `floorNumber`. Add constructors, getter and setter methods, and the methods `toString()`, `equals()` and `hashCode()` for each of the classes. Write a program that tests the defined classes and methods.
+
+16. Create a class `BoardGame` with the fields `gameName`, `minPlayers`, `maxPlayers` and `rules` (as an ArrayList of type `String`). Create classes `EducationalGame` and `StrategicGame` that inherit from the `BoardGame` class. The `EducationalGame` class should have an additional field `subject`, and the `StrategicGame` class a field `duration`. Add constructors, getter and setter methods, and the methods `toString()`, `equals()` and `hashCode()` for each of the classes. Write a program that tests the defined classes and methods.
+
+17. Create a class `Team` with the fields `name`, `city` and `points` (as an ArrayList of type `Integer`). Create classes `SoccerTeam` and `VolleyballTeam` that inherit from the `Team` class. The `SoccerTeam` class should have an additional field `rankingPosition`, and the `VolleyballTeam` class a field `numberOfVictories`. Add constructors, getter and setter methods, and the methods `toString()`, `equals()` and `hashCode()` for each of the classes. Write a program that tests the defined classes and methods.
+
+18. Create a class `Computer` with the fields `manufacturer`, `model` and `partsPrices` (as an ArrayList of type `Double`). Create classes `Laptop` and `Desktop` that inherit from the `Computer` class. The `Laptop` class should have an additional field `weight`, and the `Desktop` class a field `caseType`. Add constructors, getter and setter methods, and the methods `toString()`, `equals()` and `hashCode()` for each of the classes. Write a program that tests the defined classes and methods.
+
+19. Create a class `MusicAlbum` with the fields `title`, `artist` and `ratings` (as an ArrayList of type `Integer`). Create classes `RockAlbum` and `JazzAlbum` that inherit from the `MusicAlbum` class. The `RockAlbum` class should have an additional field `rockGenre`, and the `JazzAlbum` class a field `jazzGenre`. Add constructors, getter and setter methods, and the methods `toString()`, `equals()` and `hashCode()` for each of the classes. Write a program that tests the defined classes and methods.
+
+20. Create a class `Book` with the fields `author`, `title` and `yearOfPublication`. Then create two derived classes: `Ebook`, which adds a field `fileSize`, and `PaperbackBook`, which adds a field `numberOfPages`. Each of the classes should contain constructors, getter and setter methods, and the methods `toString()`, `equals()` and `hashCode()`. In the `equals()` method of the `Book` class compare only `author`, in the `Ebook` class compare by `author` and `fileSize`, and in the `PaperbackBook` class compare `author` and `numberOfPages`. Write a program that tests these classes, demonstrating polymorphism and object comparison.
+
+21. Design a class `Employee` with the fields `name`, `department` and `salary`. Create two derived classes: `Manager` with an additional field `bonus` and `Intern` with a field `internshipLength`. Each class should have constructors, getters and setters, `toString()`, `equals()` and `hashCode()`. In the `equals()` method of the `Employee` class compare only `name`, in the `Manager` class compare by `name` and `bonus`, and in the `Intern` class compare `name` and `internshipLength`. Write a program that tests these classes, demonstrating polymorphism and object comparison. 

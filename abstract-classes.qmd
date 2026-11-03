@@ -1,0 +1,25 @@
+# Abstract Classes
+
+1.  Define an abstract class `WorkTool` with the fields `name` of type `String` and `productionYear` of type `int`. Add an abstract method `use()` that will simulate using the tool. Then define the classes `Hammer`, `Screwdriver` and `Saw`, which inherit from the `WorkTool` class and implement the `use()` method. Create an array list of 5 appropriate objects and call the written method for them.
+
+2.  Define an abstract class `ComputerGraphic` with the fields `width`, `height` of type `int` and `fileName` of type `String`. Add the abstract methods `loadFile()` and `saveFile()`. Then define the classes `Bitmap` and `Vector`, which inherit from the `ComputerGraphic` class and implement the `loadFile()` and `saveFile()` methods. Create an array list of 5 appropriate objects and call the written methods for them.
+
+3. Define an abstract class `ElectronicDevice` with the fields `manufacturer` of type `String`, `model` of type `String` and `productionYear` of type `int`. Add the abstract methods `turnOn()` and `turnOff()`. Then define the classes `Smartphone`, `Television` and `Laptop`, which inherit from the `ElectronicDevice` class and implement the `turnOn()` and `turnOff()` methods. Create an array list of 5 appropriate objects and call the written methods for them.
+
+4. In a single project, do the following:
+
+A. Create an abstract class `Product` containing a public abstract method `getPrice()` that takes no arguments and returns `double`. Place the class in the `store` package.
+
+B. Create two classes derived from `Product`: `Book` and `Clothing`. In both classes, override the `getPrice()` method. For `Book` let it return the price 29.99, and for `Clothing` let it return the price 59.99.
+
+C. In the `TestProduct` class in the `store` package, create an array of type `Product` and initialize it with 5 instances of `Book` and `Clothing`. Iterate over the array, calling the `getPrice()` method for each product (display the prices on standard output).
+
+5. In a single project, do the following:
+
+
+A. Create an abstract class `Game` containing a public abstract method `getRating()` that takes no arguments and returns `double`. Place the class in the `entertainment` package.
+
+B. Create two classes derived from `Game`: `StrategyGame` and `AdventureGame`. In both classes, override the `getRating()` method. For `StrategyGame` let it return the rating 8.5, and for `AdventureGame` let it return the rating 7.3.
+
+C. In the `TestGame` class in the `entertainment` package, create an array list of type `Game` and initialize it with 5 instances of `StrategyGame` and `AdventureGame`. Iterate over the array list, calling the `getRating()` method for each game (display the ratings on standard output).
+

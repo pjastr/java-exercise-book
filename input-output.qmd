@@ -1,0 +1,18 @@
+# Input/Output Operations
+
+1. Write a simple text calculator application that takes two numbers from the user as input and performs basic mathematical operations (addition, subtraction, multiplication, division). Display the results on the screen.
+2. Write a program that reads two strings from standard input and then prints them on consecutive lines to standard output.
+3. Write a program that reads four rational numbers from standard input and then prints their sum to standard output.
+4. Create a program that calculates the area of a square. Get the data from the user and display the result on standard output.
+5. Write a program in which you read the values of the variables from the user, then compute and display the results of the operations:
+
+* $a+b-x^2$
+* $\frac{a-b}{c-3}$
+* $3(4+5a)(b-c^3)$
+
+6. Write a program in which the following operations are performed using so-called compound assignment operators (`+=` , `-=` and other similar operators):
+
+* $a=a+4$
+* $b=b-a$
+* $c=c(2-4a)$
+* $d=\frac{d}{4-a^2}$

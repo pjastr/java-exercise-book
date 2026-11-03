@@ -1,0 +1,8 @@
+# Exceptions
+
+
+1. Write a program that defines a method `checkAge(int age)`. This method should throw an `IllegalArgumentException` with an appropriate message if the given age is less than 18. In the main method of the program (`main`), call `checkAge` with various values and handle the exception by displaying an appropriate message to the user.
+
+2. Write a program that asks the user to enter two numbers and then divides the first number by the second. The program should handle two kinds of exceptions: `ArithmeticException` in the case of division by zero and `InputMismatchException` when the user enters something other than numbers. In both cases, display an appropriate error message and ask the user to enter the data again. Use the `int` type.
+
+3. Design and implement an exception class `InvalidDataFormatException` that extends the `Exception` class. Then write a method `checkDataFormat(String data)` that throws an `InvalidDataFormatException` if the given string does not match a specific pattern (e.g. it is not an e-mail address). In the `main` method, test how this method works by handling the exception and informing the user about the error.

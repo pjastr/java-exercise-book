@@ -1,0 +1,64 @@
+project:
+  type: book
+
+book:
+  title: "Java Exercise Book"
+  author: Piotr Jastrzębski
+  date: today
+  cover-image: logo-java.jpg
+  chapters:
+    - index.qmd
+    - part: "Introduction to Java"
+      chapters: 
+        - input-output.qmd
+        - conditional-statements.qmd
+        - loops.qmd
+        - methods.qmd
+        - random.qmd
+        - arrays.qmd
+        - arraylist.qmd
+        - strings.qmd
+    - part: "Object-Oriented Programming"
+      chapters:
+        - classes-objects.qmd
+        - access-modifiers.qmd
+        - constructors.qmd
+        - static.qmd
+        - records.qmd
+        - tostring-equals-hashcode.qmd
+        - inheritance.qmd
+        - packages.qmd
+        - complex-fields.qmd
+        - abstract-classes.qmd
+        - final.qmd
+        - comparable.qmd
+        - comparator.qmd
+        - copying.qmd
+        - interfaces.qmd
+        - exceptions.qmd
+        - generics.qmd
+        - collections.qmd
+        - delegation.qmd
+    - part: "Miscellaneous Exercises"
+    - part: "Design Patterns"
+    - references.qmd
+  downloads: pdf
+  repo-url: https://github.com/pjastr/java-exercise-book
+  repo-actions: [issue]
+
+
+bibliography: references.bib
+
+format:
+  html:
+    theme:
+      light: cosmo
+      dark: solar
+    lang: en
+  pdf:
+    lang: en
+    header-includes: |
+      \titlehead{\includegraphics[width=6in]{logo-java.jpg}}
+
+
+editor: visual

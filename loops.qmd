@@ -1,0 +1,71 @@
+# Loops
+
+1.  Write a program that uses a `for` loop to display the numbers from 1 to 100.
+
+2.  Write a program that uses a `while` loop to calculate the sum of the numbers from 1 to 50.
+
+3.  Write a Java program that uses a `for` loop to generate the first 10 numbers of the Fibonacci sequence.
+
+4.  Create a program that uses nested `for` loops to display the multiplication table for the numbers from 1 to 10.
+
+5.  Write a program that uses a `do-while` loop to display the first 20 even and odd numbers.
+
+6.  Write a program that checks whether a given number is prime. The number should be entered by the user.
+
+7.  Write a program that reads a sequence of 10 integers from the user and then displays the largest and the smallest of them.
+
+8.  Write a program that calculates the sum of the digits of any entered number. The program should accept the number as input from the user.
+
+9.  Write a program that generates and displays the first 10 terms of a geometric series with a given first term and common ratio. The parameters of the series should be entered by the user.
+
+10. Create a program that takes an integer from the user and returns the number with its digits in reverse order. For example, for the number 12345, the result should be 54321. You may restrict the program to positive numbers only.
+
+11. Write a program that calculates the sum of the squares of the numbers from 1 to n, where n is a number entered by the user.
+
+12. Write a program that finds and displays all perfect numbers less than 10,000. A perfect number is a number whose sum of divisors (excluding the number itself) is equal to its value. For example, 6 is a perfect number because $1 + 2 + 3 = 6$.
+
+13. Write a program that finds all Armstrong numbers less than 10,000. An Armstrong number is a number for which the sum of its digits, each raised to the power equal to the number of digits in the number, is equal to the number itself. For example, 153 is an Armstrong number because $1^3 + 5^3 + 3^3 = 153$.
+
+14. Write a program that calculates the least common multiple (LCM) of two given numbers. The user should enter two numbers as input.
+
+15. Write a program that reads a positive integer from the keyboard. Then draw the corresponding triangle, e.g. for 5:
+
+```         
+1
+1 2
+1 2 3
+1 2 3 4
+1 2 3 4 5
+```
+
+15. Write a program that reads a natural number $n$ ($n\geqslant 0$) from the user. Then determine and display the $n$-th term of the sequence:
+
+<!-- -->
+
+a)  $(4,-8,16,-32,64,\ldots )$
+b)  $(2,6,18,54,162,\ldots )$
+c)  $(8,3,-2,-7,-12,\ldots )$
+
+<!-- -->
+
+16. Write a program that reads consecutive integers (of various signs) from the keyboard and stops when their sum exceeds 100.
+
+17. Write a program that reads a positive integer $n$ from the user, and then $n$ integers $a_1, \ldots, a_n$. The program should display how many of these numbers satisfy the condition $3^k < a_k <k!$ for $1\leq k \leq n$.
+
+18. Write a program that displays the first sixteen powers of two on the screen. Use loops for this purpose.
+
+19. Write a program that reads 5 integers from the user. Reading should be interrupted when the user enters a negative number. If reading is not interrupted, display the sum of the entered numbers.
+
+20. Write a program that reads two integers $n$ and $m$ from standard input (we assume that $n < m$) and prints the value of $n\cdot \ldots \cdot m$ to standard output.
+
+21. Write a program that reads two integers $n$ and $m$ from standard input (we assume that $n < m$) and prints the value of $n+ \ldots + m$ to standard output.
+
+22. Write a program that reads three positive integers $a, b, c$ from the user. On standard output, display the positive integers greater than $b$, less than or equal to $a$, and divisible by $c$.
+
+23. Write a program that reads a natural number $a$ from standard input and then prints to standard output how many of the digits of $a$ are equal to 7.
+
+24. Write a program that reads integers from input until a negative number is encountered, and then displays the largest and the smallest of the numbers read (excluding the last, negative number).
+
+25. Write a program that asks the user to enter a positive integer `n`, and then calculates and displays the largest natural number `k` such that $k!$ (factorial) does not exceed `n`. The task must be solved without arrays, strings, or built-in mathematical functions. Do not write your own functions either.
+
+Example: for `n=25` the program should display 4 (because $4!=24 \leqslant 25$, but $5!=120 > 25$), and for `n=120` it should display 5.

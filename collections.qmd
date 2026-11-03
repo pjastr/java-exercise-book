@@ -1,0 +1,101 @@
+# Collections
+
+## The `Collection` Interface
+
+A1.  Write a static method `printUnique(Collection<T> items)` that takes the generic Collection interface as an argument and displays each unique element of this collection on the screen exactly once.
+
+A2.  Create a static method `countOccurrences(Collection<T> items, T element)` that returns the number of occurrences of the given element in the given collection. The function should work for any type of object stored in the collection.
+
+A3.  Implement a method `removeEveryOther(Collection<T> items)` that removes every other element from the passed collection. The method should modify the original collection without creating a copy of it.
+
+## The `Iterable` Interface
+
+B1.  Write a method `reversePrint(Iterable items)` that takes the generic Iterable interface as an argument and displays the elements of this sequence on the screen in the reverse order to that in which they were passed.
+
+B2.  Create a function `findMax(Iterable numbers)` that searches an Iterable collection containing numbers and returns the largest number. We assume that the elements of the collection are `Comparable` objects.
+
+B3.  Implement a method `countElements(Iterable items, Object element)` that counts how many times a given element appears in a collection implementing the Iterable interface. The method should compare elements using the `equals` method.
+
+## The `ArrayList` Array List
+
+C1.  Create a method `mergeLists` that takes two generic `ArrayList<T>` and returns a new `ArrayList<T>` that is the concatenation of the elements of both lists. Make sure that the order of the elements from the original lists is preserved in the resulting list.
+
+C2.  Write a function `removeDuplicates` that takes an `ArrayList<T>` and returns a new list from which all duplicates have been removed, leaving only unique elements. The order of the retained elements should correspond to their first occurrence in the original list.
+
+C3.  Implement a method `countOccurrences` that takes an `ArrayList<T>` and an element of type `T`, and then returns the number of occurrences of this element in the given list.
+
+## The `LinkedList` Linked List
+
+D1.  Write a method `isPalindrome` that takes a generic linked list (`LinkedList<T> list`) and returns `true` if the list is a palindrome, and `false` otherwise. A list is a palindrome if it reads the same forwards and backwards. The method should be as efficient as possible.
+
+D2.  Write a method `findCommonElements` that takes two generic linked lists (`LinkedList<T> list1` and `LinkedList<T> list2`) and returns a new list containing the elements that occur in both `list1` and `list2`. The elements in the returned list should be unique and do not need to be sorted. The method should not modify the input lists.
+
+## The Hash-Table-Based Set `HashSet`
+
+E1.  Write a method `findUniqueElements` that takes a generic list (`List<T> list`) and returns a `HashSet<T>` that contains only the unique elements of this list. The method should effectively eliminate duplicates.
+
+E2.  Write a method `hasCommonElements` that takes two generic sets (`HashSet<T> set1` and `HashSet<T> set2`) and returns `true` if both sets have at least one element in common, and `false` otherwise.
+
+E3.  Write a method `unionSets` that takes two generic collections of type `HashSet<T>` (`HashSet<T> set1` and `HashSet<T> set2`) and returns a new set (`HashSet<T>`) that is the union of both input sets. The resulting set should contain all the elements that occur in `set1`, `set2`, or in both of these sets.
+
+## `TreeSet`
+
+F1.  Write a method `findElementsInRange` that takes a `TreeSet<T>` and two bound values `T lowerBound` and `T upperBound`. The method should return a `TreeSet<T>` that contains all the elements of the original set that fall within the interval between `lowerBound` and `upperBound` (inclusive of both bounds).
+
+F2.  Write a method `removeMinMax` that takes a `TreeSet<T>` and modifies it by removing the smallest and the largest element. The method should return a pair (e.g. a `Pair` class or a two-element array/list) containing the removed values. If the set has fewer than two elements, the method should return appropriate null values or indicate an error.
+
+F3.  Write a method `findClosestElement` that takes a `TreeSet<T>` and a value `T target`. The method should return the element of the set that is closest to the value `target`. If two elements are equally close, the method may return either of them. We assume that the type `T` allows values to be compared (e.g. by implementing the `Comparable<T>` interface).
+
+## `Queue`
+
+G1.  Write a method `reverseQueue` that takes a generic queue (`Queue<T> queue`) and reverses the order of its elements. The method should perform the reversal in place, without using additional collections.
+
+G2.  Write a method `simulateSupermarketQueue` that takes a generic queue (`Queue<Customer> customers`) and a positive integer `n` representing the number of available checkouts. The `Customer` class contains the customer's service time. The method should return the total time needed to serve all customers in the queue, assuming that each checkout serves one customer at a time and takes the next customer from the front of the queue as soon as it becomes free.
+
+## `Deque`
+
+H1.  Write a method `isSymmetric` that takes a generic Deque (`Deque<T> deque`) and returns `true` if the elements in the Deque are arranged symmetrically (i.e. the order of the elements is the same whether we read them from front to back or from back to front). Otherwise, the method returns `false`.
+
+H2.  Write a method `removeEverySecondElement` that takes a generic Deque (`Deque<T> deque`) and removes every second element from it, starting with the second element in the order in which the elements were added. The method should modify the original Deque and return nothing.
+
+H3.  Write a method `swapEnds` that takes a generic Deque (`Deque<T> deque`) and swaps the first element with the last one. If the Deque contains fewer than two elements, the method should do nothing. The method should modify the original Deque and return nothing.
+
+## The `PriorityQueue` Priority Queue
+
+I1.  Write a method `mergePriorityQueues` that takes two generic PriorityQueues (`PriorityQueue<T> queue1` and `PriorityQueue<T> queue2`). The method should return a new PriorityQueue containing all the elements of both input queues. We assume that the elements in both queues can be compared with each other.
+
+## `Map`
+
+J1.  Write a method `reverseMap` that takes a generic map (`Map<K, V> map`) and returns a new map (`Map<V, K>`), where each key becomes a value and each value becomes a key. If the original map contains repeated values, keep only the last key-value pair when reversing the map.
+
+J2.  Write a method `findKeysWithMaxValue` that takes a generic map (`Map<K, V> map`), where the values are comparable (implement `Comparable<V>`). The method should return a list of all keys that are associated with the largest value in the map.
+
+J3.  Write a method `groupByValue` that takes a generic map (`Map<K, V> map`) and returns a new map (`Map<V, List<K>>`), where each value from the original map becomes a key in the new map, and its value is the list of keys that were associated with it in the original map.
+
+## `HashMap`
+
+K1.  Write a method `countValueOccurrences` that takes a generic HashMap (`HashMap<K, V> map`) and returns a new HashMap (`HashMap<V, Integer>`), where each key is a value from the original map, and the value is the number of occurrences of that value in the original map.
+
+K2.  Write a method `swapKeysAndValues` that takes a generic HashMap (`HashMap<K, V> map`) and returns a new HashMap (`HashMap<V, K>`), where each key from the original map becomes a value and each value becomes a key. We assume that all values in the original map are unique.
+
+K3.  Write a method `aggregateValuesByKey` that takes a generic HashMap (`HashMap<K, Integer> map`) as well as a key (`K key`) and a value (`Integer value`). The method should add the value to the current value associated with the key. If the key does not exist in the map, it should be added with the given value. The method returns nothing and modifies the original map.
+
+K4.  Write a method `compareMaps` that takes two generic HashMaps (`HashMap<K, V> map1` and `HashMap<K, V> map2`) and returns `true` if both maps have exactly the same key-value pairs, and `false` otherwise. The method should compare both keys and values.
+
+## `TreeMap`
+
+L1.  Write a method `subMapInRange` that takes a generic TreeMap (`TreeMap<K, V> map`) as well as two key values `K startKey` and `K endKey`. The method should return a new TreeMap that contains all key-value pairs from the original map whose keys fall within the range from `startKey` to `endKey`, inclusive.
+
+L2.  Write a method `reverseOrderMap` that takes a generic TreeMap (`TreeMap<K, V> map`). The method should return a new TreeMap that contains all key-value pairs from the original map, but with the order of the keys reversed.
+
+*Hint: use `Collections.reverseOrder()`.*
+
+L3.  Write a method `calculateAverageValue` that takes a generic TreeMap (`TreeMap<K, Double> map`). The method should calculate and return the average of all values (of type Double) stored in the map. We assume that the map is not empty.
+
+## `Vector`
+
+M1.  Create a function `concatenateVectors` that takes two `Vector<T>` objects and returns a new `Vector<T>` containing all the elements of the first vector, followed by all the elements of the second vector.
+
+M2.  Write a method `reverseVector` that takes a `Vector<T>` object and returns a new `Vector<T>` in which the order of the elements is reversed relative to the original vector.
+
+M3.  Implement a function `filterVector` that takes a `Vector<T>` and the functional interface `Predicate<T>`. The function should return a new `Vector<T>` containing only those elements of the original vector that satisfy the condition defined by `Predicate<T>`.

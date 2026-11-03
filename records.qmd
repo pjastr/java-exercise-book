@@ -1,0 +1,23 @@
+# Records
+
+1. Create a record `BookDTO` that represents a book in an online store. It should contain information such as `title`, `author`, `price` and `yearOfPublication`. Then create several instances of this record representing different books.
+
+2. Create a record `Address` that contains `street`, `houseNumber`, `postalCode` and `city`. Then create a record `Person` that, in addition to basic information about a person (e.g. `firstName`, `lastName`), also contains a field of type `Address`. Create a test case.
+
+3. Create a class `PointC` representing a point on a 2D plane with the fields `x` and `y`. Then create a record `PointR` with the same fields. Add methods enabling conversion from a class instance to a record and vice versa. Create a test case.
+
+4. Create a record `Book` that represents `title`, `author` and `yearOfPublication`. Add a method `describe()` that returns the book information formatted in the style "Author - Title (Year of publication)". Create a test case.
+
+5. Create a record `Point2D` representing a point on a 2D plane with the coordinates `x` and `y`. Introduce a method `distanceTo(Point2D otherPoint)` that calculates and returns the Euclidean distance between the current point and the one given as the argument. Create a test case.
+
+6. Create a record `Car` that contains `brand`, `model` and `fuelConsumptionPer100km`. Add a method `fuelCost(double fuelPrice, double distance)` that calculates and returns the cost of a trip based on the given fuel price and distance. Create a test case.
+
+7. Create a record `Student` that represents a student's first name, last name and list of grades. Introduce a method `averageGrades()` that calculates the student's grade average. Create a test case.
+
+8. Create a record `Order` that contains a list of products and their prices. Each product is represented by a record `Product` with a name and a price. In the `Order` record, add a method `totalValue()` that calculates the total value of the order based on the product prices. Create a test case.
+
+9. Create a record `Person` that represents a person's name and age. Add a constructor that verifies that the given age is not negative. If a negative value is given, set the age to 0. Create a test case.
+
+10. Create a record `BankAccount` that contains an account number and a balance. Add a constructor that allows creating an account with just a number, with a default balance of 0. Create a test case.
+
+11. Create a record `MusicTrack` that describes the title, artist and duration of a track in seconds. Add a constructor that takes only the title and artist, assuming a default track length of 180 seconds. Create a test case.

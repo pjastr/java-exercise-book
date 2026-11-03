@@ -1,0 +1,96 @@
+# The `toString`, `equals` and `hashCode` Methods
+
+
+1. Perform the following steps:
+
+* Define a class `Person` that has the following fields: `firstName`, `lastName` and `age`.
+
+* Write a constructor that takes three arguments and validates them before assigning them to the corresponding fields. 
+    - The person's age (`age`) should not be negative. If a negative value is given for the age, set the person's age to zero.
+    - The `firstName` and `lastName` fields should not be empty or equal to null. If an empty string or null is given for these fields, set an empty string accordingly.
+
+* Add a method `toString()` that returns information about the person in the format: `"Person: [firstName] [lastName], Age: [age]."`. Pay attention to letter case and punctuation.
+
+* Add a method `equals()` that compares two people based on their `firstName`, `lastName` and `age` fields. Two people are considered identical if all three fields are the same.
+* Add a method `hashCode()` that generates a hash code for the given object. This method should be consistent with the `equals()` method.
+
+2. Perform the following steps:
+
+* Define a class `Vehicle` that has the following fields: `brand`, `model` and `yearOfProduction`.
+* Write a constructor that takes three arguments and validates them before assigning them to the corresponding fields. 
+    - The year of production (`yearOfProduction`) should not be greater than the current year. If a greater value is given, set the year of production to the current year.
+    - The `brand` and `model` fields should not be empty or equal to null. If an empty string or null is given for these fields, set an empty string accordingly.
+* Add a method `toString()` that returns information about the vehicle in the format: `"Vehicle: [brand] [model], Year: [yearOfProduction]."`.
+* Add a method `equals()` that compares two vehicles based on their `brand`, `model` and `yearOfProduction` fields.
+* Add a method `hashCode()` that generates a hash code for the given object. This method should be consistent with the `equals()` method.
+
+3. Perform the following steps:
+
+* Define a class `Book` that has the following fields: `title`, `author` and `numberOfPages`.
+* Write a constructor that takes three arguments and validates them before assigning them to the corresponding fields.
+    - The number of pages (`numberOfPages`) should not be negative. If a negative value is given, set the number of pages to one.
+    - The `title` and `author` fields should not be empty or equal to null. If an empty string or null is given, set an empty string accordingly.
+* Add a method `toString()` that returns information about the book in the format: `"Book: [title] by [author], Pages: [numberOfPages]."`.
+* Add a method `equals()` that compares two books based on their `title`, `author` and `numberOfPages` fields.
+* Add a method `hashCode()` that generates a hash code for the given object. This method should be consistent with the `equals()` method.
+
+4. Perform the following steps:
+
+* Define a class `Product` that has the following fields: `productName`, `category` and `price`.
+* Write a constructor that takes three arguments and validates them before assigning them to the corresponding fields.
+    - The price (`price`) should not be negative. If a negative value is given, set the product price to zero.
+    - The `productName` and `category` fields should not be empty or equal to null. If an empty string or null is given, set an empty string accordingly.
+* Add a method `toString()` that returns information about the product in the format: `"Product: [productName], Category: [category], Price: [price]."`.
+* Add a method `equals()` that compares two products based on their `productName`, `category` and `price` fields.
+* Add a method `hashCode()` that generates a hash code for the given object. This method should be consistent with the `equals()` method.
+
+4. Perform the following steps:
+
+* Create a class `Results` (test results) with the private fields `firstName`, `lastName` and `results` (as an array of type `int`). Add a constructor that takes `firstName`, `lastName` and the array size as arguments. Add accessor methods (getters and setters) and a method `addResult(int index, int result)` that adds a test result at the given index. Also add a method `averageResult()` to calculate and return the average result.  
+* Add a method `toString()` that returns information about the student, their results and the contents of the `results` array in the format: `"Results for [firstName] [lastName]: Average Score = [averageResult], Results: [result1, result2, ...]. "`. In addition, add a method `equals()` that compares two objects of the `Results` class based on their `firstName` and `lastName` fields and the contents of the `results` array. Two objects are considered identical if all fields and the test results in the arrays are the same. Also add a method `hashCode()` that generates a hash code for the given object. This method should be consistent with the `equals()` method.
+
+5. Perform the following steps:
+
+* Create a class `CDAlbum` with the private fields `artistName`, `albumTitle` and `tracks` (as an array of type `int` representing the length of each track in minutes). 
+* Add a constructor that takes `artistName`, `albumTitle` and the number of tracks as arguments.
+* Add accessor methods (getters and setters) and a method `addTrack(int index, int length)` that adds the length of a track at the given index.
+* Also add a method `totalLength()` to calculate and return the total length of all tracks.
+* Add a method `toString()` that returns information about the artist, the album and the duration of all tracks in the format: `"CDAlbum by [artistName]: [albumTitle], Total Length = [totalLength] minutes, Tracks Length: [length1, length2, ...]. "`.
+* Add a method `equals()` that compares two objects of the `CDAlbum` class based on their `artistName` and `albumTitle` fields and the contents of the `tracks` array. Two albums are considered identical if all the information is the same.
+* Add a method `hashCode()` that generates a hash code for the given object. This method should be consistent with the `equals()` method.
+   
+6. Perform the following steps:
+
+* Create a class `MovieRating` with the private fields `movieTitle`, `directorName` and `ratings` (as an array of type `double` representing the movie's ratings on a scale from 1 to 10).
+* Add a constructor that takes `movieTitle`, `directorName` and the number of ratings as arguments.
+* Add accessor methods (getters and setters) and a method `addRating(int index, double rating)` that adds a movie rating at the given index.
+* Also add a method `averageRating()` to calculate and return the average rating of the movie.
+* Add a method `toString()` that returns information about the movie, the director, the average rating and all ratings in the format: `"MovieRating for [movieTitle] by [directorName]: Average Rating = [averageRating], Ratings: [rating1, rating2, ...]. "`.
+* Add a method `equals()` that compares two objects of the `MovieRating` class based on their `movieTitle` and `directorName` fields and the contents of the `ratings` array. Two movies are considered identical if all the information is the same.
+* Add a method `hashCode()` that generates a hash code for the given object. This method should be consistent with the `equals()` method.
+
+7. Perform the following steps:
+
+* Create a class `Gradebook` with the private fields `firstName`, `lastName` and `grades` (as an `ArrayList` of type `int`). Add a constructor that takes firstName and lastName as arguments. Add accessor methods (getters and setters) and the methods `addGrade(int grade)` and `removeGrade(int index)`, which respectively add or remove a grade from the list of grades. Also add a method `averageGrade()` to calculate and return the average of the grades.
+
+* Add a method `toString()` that returns information about the student, their grade average and all grades in the format: `"Gradebook for [firstName] [lastName]: Average Grade = [averageGrade], Grades: [grade1, grade2, ...]."`. Pay attention to letter case and punctuation.
+
+* Add a method `equals()` that compares two objects of the `Gradebook` class based on their `firstName` and `lastName` fields and the contents of the `grades` list. Two gradebooks are considered identical if they have the same first name, last name and an identical set of grades (taking order into account).
+
+* Add a method `hashCode()` that generates a hash code for the given object. This method should be consistent with the `equals()` method.
+
+8. Perform the following steps:
+
+* Create a class `Wallet` with the private fields `ownerName`, `ownerSurname` and `coins` (as an `ArrayList` of type `double`). Add a constructor that takes `ownerName` and `ownerSurname` as arguments. Add accessor methods (getters and setters) and the methods `addCoin(double coin)` and `removeCoin(int index)`, which respectively add or remove a coin from the list of coins.
+* Also add a method `totalAmount()` to calculate and return the total amount in the wallet.
+* Add a method `toString()` that returns information about the wallet owner, the total amount and all coins in the format: `"Wallet of [ownerName] [ownerSurname]: Total Amount = [totalAmount], Coins: [coin1, coin2, ...]."`. Pay attention to letter case and punctuation.
+* Add a method `equals()` that compares two objects of the `Wallet` class based on their `ownerName` and `ownerSurname` fields and the contents of the `coins` list. Two wallets are considered identical if they have the same owner and an identical set of coins (regardless of order).
+* Add a method `hashCode()` that generates a hash code for the given object. This method should be consistent with the `equals()` method.
+
+9. Perform the following steps:
+
+* Create a class `LibraryCard` with the private fields `holderFirstName`, `holderLastName` and `booksBorrowed` (as an `ArrayList` of type `String`). Add a constructor that takes `holderFirstName` and `holderLastName` as arguments. Add accessor methods (getters and setters) and the methods `borrowBook(String bookTitle)` and `returnBook(String bookTitle)`, which respectively add or remove a book title from the list of borrowed books.
+* Also add a method `numberOfBooksBorrowed()` to calculate and return the number of borrowed books.
+* Add a method `toString()` that returns information about the card holder, the number of borrowed books and all titles of the borrowed books in the format: `"Library card of [holderFirstName] [holderLastName]: Number of books borrowed = [numberOfBooksBorrowed], Books: [book1, book2, ...]."`. Pay attention to letter case and punctuation.
+* Add a method `equals()` that compares two objects of the `LibraryCard` class based on their `holderFirstName` and `holderLastName` fields and the contents of the `booksBorrowed` list. Two library card holders are considered identical if they have the same first name, last name and an identical set of borrowed books (preserving order).
+* Add a method `hashCode()` that generates a hash code for the given object. This method should be consistent with the `equals()` method.

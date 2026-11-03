@@ -1,0 +1,53 @@
+# Conditional Statements
+
+1.  Write a program that checks whether a given integer is even. If it is, the program should print "The number is even", otherwise "The number is odd".
+
+2.  Write a program that takes three integers as arguments and returns the largest of them. Use conditional statements to compare the numbers.
+
+3.  Write a program that, based on a day-of-the-week number (from 1 to 7) given as an argument, prints the name of that day of the week. For example, if the user enters 1, the program should print "Monday". If the given number is not in the range from 1 to 7, the program should display the message "Invalid day-of-the-week number".
+
+4.  Write a program that solves a quadratic equation of the form $ax^2 + bx + c = 0$. The program should take the values $a$, $b$, and $c$ as arguments, compute the discriminant ($b^2 - 4ac$), and then return the solutions of the equation depending on the value of the discriminant.
+
+5.  Write a program that takes the user's age as an argument. If the age is less than 18, the program should display "You are a minor". If the age is greater than or equal to 18 but less than 65, the program should display "You are an adult". If the age is equal to or greater than 65, the program should display "You are a senior".
+
+6.  Write a program that checks whether a given year is a leap year. A year is a leap year if it is divisible by 4 but not divisible by 100, unless it is divisible by 400.
+
+7.  Write a program that takes three integers as arguments and sorts them in ascending order using conditional statements, and then displays the sorted numbers.
+
+8.  Write a program that calculates income tax based on the given income and tax rules. Assume that the tax is 18% for income up to 85,528 PLN, and for income above that amount the tax is 14,839.02 PLN plus 32% of the excess over 85,528 PLN. The user should enter their income, and the program should calculate and display the tax amount.
+
+9.  Write a program that checks whether numbers entered from the keyboard can form a valid calendar date.
+
+Sample input:
+
+```         
+Enter day: 29
+Enter month: 2
+Enter year: 2017
+```
+
+Sample output:
+
+```         
+Invalid date
+```
+
+10. Write a program that checks whether numbers entered from the keyboard can form a valid time in 24-hour format.
+
+Sample input:
+
+```         
+Enter hour: 22
+Enter minutes: 12
+Enter seconds: 33
+```
+
+Sample output:
+
+```         
+Valid time!
+```
+
+11. Write a program in which the user enters a three-digit integer. Then check whether the number is a palindrome. Display an appropriate message on the console.
+
+12. Write a program that reads three integers (in theory they may have different signs) and checks whether they can form a right triangle - finally it prints "YES" or "NO".

@@ -1,0 +1,62 @@
+# Generic Programming
+
+1. Create a simple generic class `Box` that can store an object of any type. The class should contain a method `set` to set the object and a method `get` to retrieve it.
+
+2. Write a generic method `isEqual` that takes any two objects of the same type and returns `true` if they are equal, otherwise `false`.
+
+3. Create a generic class `Counter<T>` that will count the number of added elements of a given type. The class should have a method `add(T element)` that adds an element to an internal structure, and a method `getCount()` that returns the number of added elements.
+
+4. Create a generic class `Triple<T, U, V>` that can store three objects of different types. Implement the methods `getFirst()`, `getSecond()` and `getThird()` to retrieve the first, second and third element, respectively.
+
+5. Write a generic method `max` that takes an array of elements of a comparable type (implementing the `Comparable<T>` interface) and returns the element with the highest value. Handle the case of an empty array.
+
+6. Define a generic interface `Stack<T>` with the methods `push(T item)`, `T pop()`, `T peek()` and `boolean isEmpty()`. Create a class implementing this interface that will represent a stack storing elements of any type.
+
+7. Create a generic class `Storage<T>` that stores a single object of any type. The class should have the methods `store(T item)`, which saves the object, and `T retrieve()`, which returns the stored object.
+
+8. Write a generic method `printArray` that takes an array of elements of any type and prints all the elements of the array to standard output. The method should be able to handle arrays of any object type.
+
+9. Create a generic class `Pair` that stores two values of any type. The class should have two methods: `getFirst()`, which returns the first element of the pair, and `getSecond()`, which returns the second element of the pair.
+
+10. Write a generic method `swap` that takes an array of any type and two integers representing indices. The method should swap the elements of the array at the given indices.
+
+11. Create a generic class `GenericQueue<T>` that implements a simple queue. The class should have the methods `enqueue(T element)`, which adds an element to the queue, and `dequeue()`, which removes and returns the element from the front of the queue.
+
+12. Write a static generic method `swap` that takes an array of any type and two indices, and then swaps the elements in this array at the specified indices. The method should work for an array of any type. Sample method call: `swap(myArray, 0, 2);`, where `myArray` is an array of type `Integer[]` or any other type. Safeguard the method so that it cannot be called with indices outside the range of the array.
+
+13. Create a static generic method `reverseArray` that takes an array of elements of type `T` and reverses the order of its elements. The method should modify the passed array without returning a new one. Check how the method works on arrays of different types, such as `Character`, `Boolean` and your own object types. Safeguard the method so that it cannot be called with a `null` array.
+
+14. Write a static generic method `minValue` that takes an array of elements of a generic type `T`, where `T` extends `Comparable<T>`. The method should return the smallest element of the array. Test this method on arrays containing different types of comparable objects, such as `Integer`, `Double` or `String`. Safeguard the method so that it cannot be called with an array with zero elements. Add a class `Person` with the fields `name` and `age` and test the `minValue` method on an array of `Person` objects.
+
+15. Write a static generic method `maxValue` that takes an array of elements of a generic type `T`, where `T` extends `Comparable<T>`. The method should return the largest element of the array. Make sure that the method does not accept an empty array (with zero elements). Test the method on arrays containing different types of comparable objects, such as `Integer`, `Float` or `String`. Create a class `Vehicle` with the fields `model` and `speed`, implementing the generic `Comparable`, and test the `maxValue` method on an array of `Vehicle` objects.
+
+16. Create a static generic method `sortAndReturnFirst` that takes an array of elements of a generic type `T`, where `T` extends `Comparable<T>`. The method should sort the array and return its first element. Safeguard the method against being called with an empty array (with zero elements). Test this method on various data types, including a newly created class `Book` with the fields `title` and `author`. The `Book` class should implement the generic `Comparable` interface based on the `title` field according to the natural ordering.
+
+17. Write a static generic method `printArray` that takes as an argument an array of elements of a generic type `T` and prints all the elements of the array. Test this method on arrays of type `Integer` and `Double`. Then try to test the method on an array of a primitive type, e.g. `int` or `double`, and note the resulting compilation errors. Explain why Java does not allow primitive types to be used in the context of generic types.
+
+18. Create a static generic method `sumElements` that takes a collection of elements of a generic type `T` and returns their sum. Test this method on collections of type `Integer` and `Float`. Then try to use this method with a collection of primitive types, e.g. `int` or `float`, and see what compilation errors appear. Use this to explain the difference between primitive types and object types in Java.
+
+19. Design a static generic method `compareElements` that takes two arguments of a generic type `T` and returns a `boolean` value indicating whether they are equal. Test the method on pairs of `Integer`, `String` and `Character` objects. Then try to test the same method on primitive types, such as `int` or `char`, and describe the problems encountered when trying to use primitive types with generics.
+
+20. Write a static generic method `printObjectInfo` that takes an argument of a generic type `T` with an upper bound of `Object`. The method should print the object's class, its hashcode and the result of the `toString()` method. Test this method on various types of objects, such as `String`, `Integer`, and your own classes, e.g. `Car`, `Animal`, where each class has its own unique fields and methods.
+
+22. Create two classes: `Animal` and `Dog`, where `Dog` inherits from `Animal`. Then write a static generic method `findMax` that takes two arguments: `element1` and `element2` of a type that `extends Animal`. The method should return the larger element according to a comparison criterion you define yourself. In the implementation, compare the elements based on an attribute of your choice, for example age.
+
+23. Define the classes `Car` and `ElectricCar`, where `ElectricCar` inherits from `Car`. Write a static generic method `compareObjects` that takes two arguments: `object1` and `object2` of a type that `extends Car`. The method should return `true` if the objects are of the same type, otherwise `false`. Use the `getClass()` method to compare the classes of the objects.
+
+24. Create a generic class `Pair<T>` that stores two objects of the same type. Create two classes: `Animal` and `Dog`, where `Dog` inherits from `Animal`. Then write a static generic method `findMax` that takes a `Pair<? extends Animal>`. The method should return the larger element according to a comparison criterion you define yourself. 
+
+25. Create a generic class `Triple<T>` that stores three objects of the same type. Then create two classes: `Bird` and `Eagle`, where `Eagle` inherits from `Bird`. Then write a static generic method `findMin` that takes a `Triple<? extends Bird>`. This method should return the smallest element based on a comparison criterion you define.
+
+
+26. Create a generic class `Triple<T>` that stores three objects of the same type. Then create two classes: `Bird` and `Eagle`, where `Eagle` inherits from `Bird`. Then write a static generic method `findMin` that takes a `Triple<? extends Bird>`. This method should return the smallest element based on a comparison criterion you define.
+
+
+27. Create a generic class `ElementPair<T>` that stores two objects of the same type. Create two classes: `Shape` and `Circle`, where `Circle` inherits from `Shape`. Then write a static generic method `findLargest` that takes an `ElementPair<? extends Shape>`. The method should return the larger element according to a comparison criterion you define yourself.
+
+28. Create a generic class `DoubleElement<T>` that stores two objects of the same type. Create two classes: `Person` and `Student`, where `Student` inherits from `Person`. Then write a static generic method `findYoungest` that takes a `DoubleElement<? extends Person>`. The method should return the smaller element according to your own comparison criterion, for example age.
+
+29. Create a generic class `Pair<T>` that stores two objects of the same type. Create two classes: `Animal` and `Dog`, where `Dog` inherits from `Animal`. The `Dog` class should have a private field `age` that the `Animal` class does not have. Then write a static generic method `findMinMaxAge` that takes as arguments an array of objects of type `Dog` and a `Pair<?super Dog> result`. The method should store (as objects of type `Dog`) the youngest and the oldest dog (in terms of age) from the array in the second argument of the method. Do this directly, without using the `Comparable` or `Comparator` interfaces.
+
+30. Create a generic class `Pair<T>` that stores two objects of the same type. Then create two classes: `Plant` and `Tree`, where `Tree` inherits from `Plant`. The `Tree` class should have a private field `height` that the `Plant` class does not have. Then write a static generic method `findMinMaxHeight` that takes as arguments an array of objects of type `Tree` and a `Pair<? super Tree> result`. The method should store (as objects of type Tree) the shortest and the tallest tree (in terms of height) from the array in the second argument of the method. Also use the generic `Comparable` interface.
+

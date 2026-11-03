@@ -1,0 +1,15 @@
+# Access Modifiers
+
+1. Create a class `Person` with a public field `name` and a private field `password`. See how different access modifiers affect access to these fields from another class.
+
+2. Create two classes: `Parent` and `Child`. The `Parent` class should have one `protected` field. Try to access this field from the `Child` class.
+
+3. Create a class `Car` with a private method `engineFailure()`. Try to call this method from outside the class.
+
+4. Create two classes in the same package: `Employee` and `Company`. The `Employee` class should have a field without an access modifier. Try to access this field from the `Company` class.
+
+5. Create a class `BankAccount` with a public field `accountNumber` and a private field `balance`. See how different access modifiers affect access to these fields from another class.
+
+6. Create a class `Player` with three fields: `name` (public), `age` (with no access modifier) and `nationality` (private). In the `Main` class, create an array of players and try to change the values of all the fields. Observe the results.
+
+7. Create a class `Coach` that is declared as `private`. Try to create a `Coach` object in the `Main` class. What is the result?
